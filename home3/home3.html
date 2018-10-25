@@ -1,0 +1,74 @@
+<ion-header>
+    
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+  <ion-title>Home</ion-title>
+  
+</ion-navbar>
+</ion-header>
+<ion-content>
+<div text-center>
+<h3> ระบบค้นหาหอพักใกล้มหาวิทยาลัยราชภัฎภูเก็ต</h3>
+</div>
+<div text-right>
+  <ion-buttons end>
+      <button ion-button icon-only (click)="login()">
+        <ion-icon name="Login">User</ion-icon>
+      </button>
+    </ion-buttons>
+</div>
+<div text-right>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="register()">
+          <ion-icon name="register">จัดการ</ion-icon>
+</button>
+      </ion-buttons>
+  </div>
+  <div text-right>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="compare()">
+            <ion-icon name="compare">เพิ่มหอพัก</ion-icon>
+  </button>
+        </ion-buttons>
+        
+    </div>
+    <br>
+    <div text-center>
+    <input type="text" placeholder="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; พิมพ์ชื่อหอพัก" name="search">     <button ion-button icon-only (click)="search()">
+      <ion-icon name="register">Search</ion-icon>
+</button>
+    
+  </div>
+  <br><br>
+  <div text-left>  
+      <button ion-button icon-only>
+        <ion-icon name="ddepartment"><h6>หอพักที่ได้คะแนนมากที่สุด<br>(กำลังเลือก)</h6></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="home2()">
+        <ion-icon name="ddepartment"><h6>หอพักที่ใกล้ที่สุด</h6></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="home()">
+        <ion-icon name="ddepartment"><h6>หอพักที่ราคาถูกที่สุด</h6></ion-icon>
+      </button>
+  <br><br>
+  <button ion-button icon-only (click)="ddepartment()">
+    <ion-icon name="ddepartment">หอพักที่1</ion-icon>
+  </button><Br>
+  <button ion-button icon-only (click)="ddepartment()">
+    <ion-icon name="ddepartment">หอพักที่2</ion-icon>
+  </button><Br>
+  <button ion-button icon-only (click)="ddepartment()">
+    <ion-icon name="ddepartment">หอพักที่3</ion-icon>
+  </button><Br>
+  <button ion-button icon-only (click)="ddepartment()">
+    <ion-icon name="ddepartment">หอพักที่4</ion-icon>
+    </button><Br>
+      <button ion-button icon-only (click)="ddepartment()">
+    <ion-icon name="ddepartment">หอพักที่5</ion-icon>
+  </button>
+  </div>
+<button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>
